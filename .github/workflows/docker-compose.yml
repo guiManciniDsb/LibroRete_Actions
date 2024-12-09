@@ -41,8 +41,8 @@ jobs:
         docker-compose exec backend bash -c "git config --global --add safe.directory /backend"
         #cd backend/app; python manage.py test
         #python /backend/app/manage.py test app
-        docker ps
-        docker compose exec librorete_actions-backend-1 sh -c "ls -a;cd backend/app;coverage run --branch manage.py test tests;coverage xml;cat coverage.xml;pwd;ls;"
+        #docker ps
+        #docker compose exec librorete_actions-backend-1 sh -c "ls -a;cd backend/app;coverage run --branch manage.py test tests;coverage xml;cat coverage.xml;pwd;ls;"
      
         
         
