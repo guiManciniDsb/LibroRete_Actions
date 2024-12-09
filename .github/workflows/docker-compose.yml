@@ -46,6 +46,8 @@ jobs:
         #docker compose exec backend sh -c "ls -a;cd backend/app;ls -a;pwd; python manage.py test tests -v 3"
          docker exec librorete_actions-backend-1 coverage run --branch backend/app/manage.py test tests
          docker exec librorete_actions-backend-1 ls -a
+         docker exec librorete_actions-backend-1 coverage xml
+         docker exec librorete_actions-backend-1 cat coverage.xml
         
         
     - name: Shut down Docker Compose
