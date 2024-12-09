@@ -42,7 +42,7 @@ jobs:
         #cd backend/app; python manage.py test
         #python /backend/app/manage.py test app
         docker ps
-        docker compose exec backend sh -c "cd backend/app;coverage run --branch manage.py test tests;coverage xml;cat coverage.xml;pwd;ls;"
+        docker compose exec librorete_actions-backend-1 sh -c "ls -a;cd backend/app;coverage run --branch manage.py test tests;coverage xml;cat coverage.xml;pwd;ls;"
      
         
         
